@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:zxing="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI"
+	x:Class="QrCodeMaui.Camera"
+	BackgroundColor="#000000">
+
+	<Grid RowDefinitions="1*,3*">
+
+		<zxing:CameraBarcodeReaderView
+			Grid.Row="0" Grid.RowSpan="3"
+			x:Name="barcodeView"
+			BarcodesDetected="BarcodesDetected"
+			 />
+
+		<Grid
+			Grid.Row="0"
+			BackgroundColor="#aa000000">
+		</Grid>
+
+	</Grid>
+	
+</ContentPage>
