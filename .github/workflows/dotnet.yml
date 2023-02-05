@@ -27,7 +27,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: cd D:\a\QRCodeMaui\QRCodeMaui\QrCodeMaui dotnet publish -f:net6.0-android -c:Release /p:AndroidSigningKeyPass=mypassword /p:AndroidSigningStorePass=mypassword
+      run: cd D:\a\QRCodeMaui\QRCodeMaui dotnet publish -f:net6.0-android -c:Release /p:AndroidSigningKeyPass=mypassword /p:AndroidSigningStorePass=mypassword
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.2
       with: 
